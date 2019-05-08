@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eontrepreneur | Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header class="fullscreen">
+        <nav class="nav">
+            <div class="brand"><a href="#"><img src="./images/logo.png" alt=""></a></div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Programmes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="signup"><a href="#" id="signupbtn"><i class="fas fa-sign-in-alt"></i> Sign Up</a> <span>--</span> <a href="#" id="loginbtn"><i class="fa fa-user" aria-hidden="true"></i>
+            </i> Log In</a></div>
+            </div>
+        </nav>
+        <div class="modal" id="signupmodal">
+            <div class="modalcontent">
+                <div class="mheader">
+                    <span id="closebtn">&times;</span>
+                    <h3 class="title">Sign Up</h3>
+                </div>
+                <div class="mbody">
+                    <form action="signup.php" method="POST">
+                        <p class="lead">Please fill in the correct details.</p>
+                        <span class="bar"></span>
+                        <label for="Name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter your full Name" name="fname" required>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter your mail address" name="email" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <label for="psw-repeat"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                        <button type="submit" name="signup" class="btn signupbtn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="loginmodal">
+            <div class="modalcontent">
+                <div class="mheader">
+                    <span id="closebtn2">&times;</span>
+                    <h3 class="title">Login</h3>
+                </div>
+                <div class="mbody">
+                    <form action="login.php" method="POST">
+                        <label for="Uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter your username" name="uname" required>
+                        <label for="pw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" name="login" class="btn signupbtn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="textfield">
+            <h1 class="title">The <span class="bluetheme">Art </span> of Business</h1>
+            <p class="lead">Offering world class <span class="bluetheme">Business</span> Education</p>
+            <a href="#child" class="btn btn-round"><i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <section class="halfscreen leftalign f1" id="child">
+        <div class="textfield">
+            <h3 class="title">Offering Quality Business Education to the young <br> and budding eontrepreneurs.</h3>
+            <span class="bar">-</span>
+            <p class="lead">Enroll your child along with <span class="bold">300</span> other young and budding entrepreneurs today.</p>
+            <a href="#" class="btn btn-light">Learn More</a>
+        </div>
+    </section>
+
+    <section class="halfscreen rightalign f1" id="adult">
+            <div class="textfield">
+                <h3 class="title">Plan, Devise, Strategise, Conquer</h3>
+                <span class="bar">-</span>
+                <p>Partake in a series of events which help you develop your business ideas. Feel free to create and start your own businesses in our programmes and think out of the box.</p>
+                <a href="#" class="btn btn-light">Enroll</a>
+            </div>
+    </section>
+
+    <section class="blockquote">
+        <h5 class="title">"Price is what you pay. Value is what you get."</h5>
+        <p class="author">-Warren Buffet</p>
+    </section>
+
+    <footer class="halfscreen">
+        <div class="maparea">
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31098.573045627545!2d77.63070757058118!3d13.015178720623359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1725e6656e51%3A0x6e043f35e29e5e62!2sRBH+Pearl%2C+5th+D+Main+Rd%2C+HRBR+Layout+2nd+Block%2C+HRBR+Layout%2C+Kalyan+Nagar%2C+Bengaluru%2C+Karnataka+560043!5e0!3m2!1sen!2sin!4v1557212889382!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+        <div class="contact-text">
+            <h6 class="heading"><i class="fas fa-address-card"></i> Address:</h6>
+            <p class="content">5th D Main Rd, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar,Bengaluru,, Karnataka 560043</p>
+            <h6 class="heading"><i class="fa fa-phone" aria-hidden="true"></i> Contact Info:</h6>
+            <ul>
+                <li><p class="content">+91-9003238152</p></li>
+                <li><p class="content">+91-9500016260</p></li>
+            </ul>
+            <h6 class="heading">Social:</h6>
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook blue"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube red"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter cyan"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope orange"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyrights">
+        <div class="bluebar"></div>
+        <p class="lead">Copyrights &copy; <a href="https://www.github.com/FreezeTheCoder" target="_blank">Sid</a> , 2019.</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
